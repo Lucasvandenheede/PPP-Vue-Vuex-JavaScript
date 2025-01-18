@@ -1,6 +1,21 @@
 let fruit = "apple";
 
-if (fruit === "apple") {
-  console.log("fruit is apple");
-}
-console.log(123 + 28 + 23 - 34);
+console.log("Micheal");
+console.log(23);
+console.log(40 + 8 + 23 - 10);
+
+let firstName = "Micheal";
+console.log(firstName);
+console.log(firstName);
+console.log(firstName);
+
+let person = "Micheal";
+let PI = 3.1415;
+
+let firstJob = "coder";
+let currentJob = "teacher";
+
+let job1 = "programmer";
+let job2 = "teacher";
+
+console.log(firstJob);
