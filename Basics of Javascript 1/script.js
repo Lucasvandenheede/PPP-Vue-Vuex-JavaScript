@@ -40,7 +40,8 @@ console.log(typeof age);
 
 console.log(typeof null); */
 
-let price = 120;
+// 10.
+/* let price = 120;
 price = 250;
 
 const birthYear = 1996;
@@ -52,4 +53,50 @@ console.log(birthYear);
 
 // console.log(category);
 brandName = "apple";
-console.log(brandName);
+console.log(brandName); */
+
+// 11.
+
+// Arithmetic Operators
+const currentYear = 2022;
+const age1 = currentYear - 1996;
+const age2 = currentYear - 2005;
+console.log(age1, age2);
+
+console.log(age1 * 16);
+console.log(age1 / 10);
+console.log(5 ** 4);
+
+const firstName = "John";
+const surName = "Doe";
+console.log(firstName + " " + surName);
+
+// Assignmen operator
+let fullName = firstName + surName;
+console.log(fullName);
+
+let counter = 0;
+counter += 10;
+console.log(counter);
+
+counter *= 5;
+console.log(counter);
+
+counter /= 2;
+console.log(counter);
+
+counter++;
+console.log(counter);
+
+counter--;
+counter--;
+counter--;
+console.log(counter);
+
+// Comarison operators
+const legalAge = age2 >= 18;
+console.log(age1 > age2);
+
+console.log(legalAge);
+
+console.log(currentYear - 1996 > currentYear - 2005);
