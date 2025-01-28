@@ -56,8 +56,7 @@ brandName = "apple";
 console.log(brandName); */
 
 // 11.
-
-// Arithmetic Operators
+/* // Arithmetic Operators
 const currentYear = 2022;
 const age1 = currentYear - 1996;
 const age2 = currentYear - 2005;
@@ -99,4 +98,20 @@ console.log(age1 > age2);
 
 console.log(legalAge);
 
+console.log(currentYear - 1996 > currentYear - 2005); */
+
+// 12.
+const currentYear = 2022;
+const age1 = currentYear - 1996;
+const age2 = currentYear - 2005;
+
 console.log(currentYear - 1996 > currentYear - 2005);
+// console.log(100 - 30 - 10);
+
+let a, b;
+a = b = 100 - 30 - 10;
+console.log(a, b);
+
+console.log(age1, age2);
+const average = (age1 + age2) / 2;
+console.log(average);
