@@ -21,7 +21,7 @@ let job2 = "teacher";
 
 console.log(firstJob); */
 
-let appleIsFruit = true;
+/* let appleIsFruit = true;
 console.log(appleIsFruit);
 console.log(typeof appleIsFruit);
 console.log(typeof "Micheal");
@@ -38,4 +38,18 @@ age = 26;
 console.log(age);
 console.log(typeof age);
 
-console.log(typeof null);
+console.log(typeof null); */
+
+let price = 120;
+price = 250;
+
+const birthYear = 1996;
+
+console.log(birthYear);
+
+// var category = "electronics";
+// category = "clothes";
+
+// console.log(category);
+brandName = "apple";
+console.log(brandName);
