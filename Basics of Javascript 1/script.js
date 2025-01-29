@@ -101,7 +101,7 @@ console.log(legalAge);
 console.log(currentYear - 1996 > currentYear - 2005); */
 
 // 12.
-const currentYear = 2022;
+/* const currentYear = 2022;
 const age1 = currentYear - 1996;
 const age2 = currentYear - 2005;
 
@@ -114,4 +114,23 @@ console.log(a, b);
 
 console.log(age1, age2);
 const average = (age1 + age2) / 2;
-console.log(average);
+console.log(average); */
+
+// 13.
+const brandName = "Toyota";
+const modelName = "Corlolla";
+const year = 2015;
+
+const myCar =
+  "My car is" + " " + brandName + " " + modelName + " I bought it in " + year;
+console.log(myCar);
+
+const myCar2 = `My car is ${brandName} ${modelName} I bought it in ${year}`;
+console.log(myCar2);
+
+console.log(`Hello \nHow are you? \nI'm fine`);
+console.log(
+  `Hello
+  How are you?
+  I'm fine`
+);
