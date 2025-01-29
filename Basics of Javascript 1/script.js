@@ -117,7 +117,7 @@ const average = (age1 + age2) / 2;
 console.log(average); */
 
 // 13.
-const brandName = "Toyota";
+/* const brandName = "Toyota";
 const modelName = "Corlolla";
 const year = 2015;
 
@@ -134,3 +134,16 @@ console.log(
   How are you?
   I'm fine`
 );
+ */
+
+// 14.
+const personAge = 8;
+
+if (personAge >= 18) {
+  console.log("John can buy alchol");
+} else {
+  const yearsLeft = 18 - personAge;
+  console.log(
+    `John is too young for drinking, he can drink in ${yearsLeft} years`
+  );
+}
