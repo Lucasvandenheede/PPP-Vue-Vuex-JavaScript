@@ -137,7 +137,7 @@ console.log(
  */
 
 // 14.
-const personAge = 8;
+/* const personAge = 8;
 
 if (personAge >= 18) {
   console.log("John can buy alchol");
@@ -146,4 +146,24 @@ if (personAge >= 18) {
   console.log(
     `John is too young for drinking, he can drink in ${yearsLeft} years`
   );
-}
+} */
+
+// 15.
+// Type Conversion
+const inputAge = "26";
+console.log(Number(inputAge) + 3);
+console.log(Number(inputAge), inputAge);
+console.log(Number("Hello"));
+console.log(typeof NaN);
+console.log(String(100), 100);
+
+// Type Coersion
+console.log("I was born in " + 1999);
+console.log("I was born in " + "1999");
+console.log("1990" - "20" - 10);
+console.log("1990" + "20" + 10);
+console.log("1990" * "5");
+
+let number = "10" + 10; // 1010
+number = number - 10; // 1000
+console.log(number);
