@@ -192,7 +192,7 @@ if (age) {
 } */
 
 // 17.
-const age = "18";
+/* const age = "18";
 
 if (age === 18) console.log("You are of legal age (===)");
 if (age == 18) console.log("You are of legal age (==)");
@@ -204,4 +204,21 @@ if (inputAge === 26) console.log("You are the same age with me");
 else if (inputAge === 12) console.log("You are the same age as my son");
 else console.log("You are not the same age as me or my son");
 
-if (inputAge !== 26) console.log("No,no no");
+if (inputAge !== 26) console.log("No,no no"); */
+
+// 19.
+const hasMotorcycle = true;
+const hasCar = false;
+
+console.log(hasMotorcycle && hasCar);
+console.log(hasMotorcycle || hasCar);
+console.log(!hasMotorcycle);
+
+const isRainy = false;
+const shouldDrive = hasCar && isRainy;
+
+if (shouldDrive) {
+  console.log("John should drive because rainy");
+} else if (hasMotorcycle && !isRainy) {
+  console.log("John can ride with motorcycle");
+}
