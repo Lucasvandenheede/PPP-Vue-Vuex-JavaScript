@@ -169,7 +169,7 @@ number = number - 10; // 1000
 console.log(number); */
 
 // 16.
-// Falsy values: 0, "", undefined, null, NaN
+/* // Falsy values: 0, "", undefined, null, NaN
 console.log(Boolean(0));
 console.log(Boolean(undefined));
 console.log(Boolean("asasa"));
@@ -189,4 +189,19 @@ if (age) {
   console.log("age");
 } else {
   console.log("no age");
-}
+} */
+
+// 17.
+const age = "18";
+
+if (age === 18) console.log("You are of legal age (===)");
+if (age == 18) console.log("You are of legal age (==)");
+
+const inputAge = Number(prompt("What is your age"));
+console.log(inputAge);
+
+if (inputAge === 26) console.log("You are the same age with me");
+else if (inputAge === 12) console.log("You are the same age as my son");
+else console.log("You are not the same age as me or my son");
+
+if (inputAge !== 26) console.log("No,no no");
