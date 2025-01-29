@@ -149,7 +149,7 @@ if (personAge >= 18) {
 } */
 
 // 15.
-// Type Conversion
+/* // Type Conversion
 const inputAge = "26";
 console.log(Number(inputAge) + 3);
 console.log(Number(inputAge), inputAge);
@@ -166,4 +166,27 @@ console.log("1990" * "5");
 
 let number = "10" + 10; // 1010
 number = number - 10; // 1000
-console.log(number);
+console.log(number); */
+
+// 16.
+// Falsy values: 0, "", undefined, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("asasa"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const candy = 0;
+
+if (candy) {
+  console.log("Do not eat too muchh candy");
+} else {
+  console.log("You have no candy");
+}
+
+let age = 0; // undefined
+if (age) {
+  console.log("age");
+} else {
+  console.log("no age");
+}
