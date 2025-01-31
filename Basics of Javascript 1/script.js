@@ -224,7 +224,7 @@ if (shouldDrive) {
 } */
 
 // 20.
-const operator = "+";
+/* const operator = "+";
 const numberOne = 10;
 const numberTwo = 5;
 
@@ -247,4 +247,18 @@ switch (operator) {
     break;
   default:
     console.log("Invalid operator");
+} */
+
+// 21.
+// Expressions
+8 + 7;
+1000;
+true && false && !false;
+
+// Statements
+if (12 < 26) {
+  console.log("12 is smaller than 26");
 }
+
+const str = "10";
+console.log(`${str} appels`);
