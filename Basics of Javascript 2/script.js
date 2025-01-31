@@ -57,7 +57,7 @@ console.log("Expression: ", age2); */
 
 // 26. Arrow Functions
 
-const calculateAge3 = (birthYear) => 2025 - birthYear;
+/* const calculateAge3 = (birthYear) => 2025 - birthYear;
 const age3 = calculateAge3(1996);
 console.log(age3);
 
@@ -71,4 +71,21 @@ const leftYearsForLegalAge = (birthYear, name) => {
 const leftYears = leftYearsForLegalAge(2020, "Micheal");
 const leftYears2 = leftYearsForLegalAge(2023, "John");
 console.log(leftYears);
-console.log(leftYears2);
+console.log(leftYears2); */
+
+// 27. Functions in functions
+
+function addition(number1, number2) {
+  return number1 + number2;
+}
+
+function calculator(number1, number2) {
+  console.log(number1, number2);
+  // const addition = number1 + number2;
+  const additionResult = addition(number1, number2);
+  const resultText = `${number1} + ${number2} = ${additionResult}`; // 10 + 20 = 30
+
+  return resultText;
+}
+
+console.log(calculator(5, 6));
