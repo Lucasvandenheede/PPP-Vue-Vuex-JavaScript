@@ -1,3 +1,4 @@
+// 8. Values and Variables
 /* let fruit = "apple";
 
 console.log("Micheal");
@@ -21,6 +22,7 @@ let job2 = "teacher";
 
 console.log(firstJob); */
 
+// 9. Datatypes
 /* let appleIsFruit = true;
 console.log(appleIsFruit);
 console.log(typeof appleIsFruit);
@@ -40,7 +42,7 @@ console.log(typeof age);
 
 console.log(typeof null); */
 
-// 10.
+// 10. Let, Const and Var Keywords
 /* let price = 120;
 price = 250;
 
@@ -55,7 +57,7 @@ console.log(birthYear);
 brandName = "apple";
 console.log(brandName); */
 
-// 11.
+// 11. Basic Operators
 /* // Arithmetic Operators
 const currentYear = 2022;
 const age1 = currentYear - 1996;
@@ -100,7 +102,7 @@ console.log(legalAge);
 
 console.log(currentYear - 1996 > currentYear - 2005); */
 
-// 12.
+// 12. Operator Precedence
 /* const currentYear = 2022;
 const age1 = currentYear - 1996;
 const age2 = currentYear - 2005;
@@ -116,7 +118,7 @@ console.log(age1, age2);
 const average = (age1 + age2) / 2;
 console.log(average); */
 
-// 13.
+// 13. Strings and Templates Literals
 /* const brandName = "Toyota";
 const modelName = "Corlolla";
 const year = 2015;
@@ -136,7 +138,7 @@ console.log(
 );
  */
 
-// 14.
+// 14. If / Else Statements
 /* const personAge = 8;
 
 if (personAge >= 18) {
@@ -148,7 +150,7 @@ if (personAge >= 18) {
   );
 } */
 
-// 15.
+// 15. Type Conversion and Coercion
 /* // Type Conversion
 const inputAge = "26";
 console.log(Number(inputAge) + 3);
@@ -168,7 +170,7 @@ let number = "10" + 10; // 1010
 number = number - 10; // 1000
 console.log(number); */
 
-// 16.
+// 16. Truthy and Falsy Values
 /* // Falsy values: 0, "", undefined, null, NaN
 console.log(Boolean(0));
 console.log(Boolean(undefined));
@@ -191,7 +193,7 @@ if (age) {
   console.log("no age");
 } */
 
-// 17.
+// 17. Equality Operators
 /* const age = "18";
 
 if (age === 18) console.log("You are of legal age (===)");
@@ -206,7 +208,7 @@ else console.log("You are not the same age as me or my son");
 
 if (inputAge !== 26) console.log("No,no no"); */
 
-// 19.
+// 19. Logical Operators
 /* const hasMotorcycle = true;
 const hasCar = false;
 
@@ -223,7 +225,7 @@ if (shouldDrive) {
   console.log("John can ride with motorcycle");
 } */
 
-// 20.
+// 20. Switch statements
 /* const operator = "+";
 const numberOne = 10;
 const numberTwo = 5;
@@ -249,8 +251,8 @@ switch (operator) {
     console.log("Invalid operator");
 } */
 
-// 21.
-// Expressions
+// 21. Statements and Expressions
+/* // Expressions
 8 + 7;
 1000;
 true && false && !false;
@@ -261,4 +263,22 @@ if (12 < 26) {
 }
 
 const str = "10";
-console.log(`${str} appels`);
+console.log(`${str} appels`); */
+
+// 22. Ternary Operator
+const age = 36;
+
+// age >= 18
+//   ? console.log("You can drive a car")
+//   : console.log("You can not drive a car");
+
+const vehicle = age >= 18 ? "Car" : "Bike";
+console.log(vehicle);
+
+let vehicleTwo;
+if (age >= 18) vehicleTwo = "Car";
+else vehicleTwo = "Bike";
+
+console.log(vehicleTwo);
+
+console.log(`I can drive ${age >= 18 ? "Car" : "Bike"}`);
