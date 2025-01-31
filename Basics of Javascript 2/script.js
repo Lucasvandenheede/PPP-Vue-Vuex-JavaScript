@@ -13,7 +13,7 @@ else console.log("Person is in meeting");
 // const switch = "open"; */
 
 // 24. Functions
-function welcomeText() {
+/* function welcomeText() {
   console.log("Welcome to my page!");
 }
 
@@ -33,4 +33,24 @@ const result1 = calculator(12, 24);
 console.log(result1);
 
 const result2 = calculator(100, 200);
-console.log(result2);
+console.log(result2); */
+
+// 25. Declerations and Expressions
+
+// Declerations
+function calculateAge1(birthYear) {
+  const currentYear = 2025;
+  return currentYear - birthYear;
+}
+
+const age1 = calculateAge1(1996);
+console.log("Decleration: ", age1);
+
+// Expressions
+const calculateAge2 = function (birthYear) {
+  const currentYear = 2025;
+  return currentYear - birthYear;
+};
+
+const age2 = calculateAge2(1996);
+console.log("Expression: ", age2);
