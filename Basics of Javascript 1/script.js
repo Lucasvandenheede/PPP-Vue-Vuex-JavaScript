@@ -207,7 +207,7 @@ else console.log("You are not the same age as me or my son");
 if (inputAge !== 26) console.log("No,no no"); */
 
 // 19.
-const hasMotorcycle = true;
+/* const hasMotorcycle = true;
 const hasCar = false;
 
 console.log(hasMotorcycle && hasCar);
@@ -221,4 +221,30 @@ if (shouldDrive) {
   console.log("John should drive because rainy");
 } else if (hasMotorcycle && !isRainy) {
   console.log("John can ride with motorcycle");
+} */
+
+// 20.
+const operator = "+";
+const numberOne = 10;
+const numberTwo = 5;
+
+switch (operator) {
+  case "+":
+    console.log("addition");
+    console.log(`${numberOne + numberTwo}`);
+    break;
+  case "-":
+    console.log("substraction");
+    console.log(`${numberOne - numberTwo}`);
+    break;
+  case "*":
+    console.log("multiply");
+    console.log(`${numberOne * numberTwo}`);
+    break;
+  case "/":
+    console.log("divide");
+    console.log(`${numberOne / numberTwo}`);
+    break;
+  default:
+    console.log("Invalid operator");
 }
