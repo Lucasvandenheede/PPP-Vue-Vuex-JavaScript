@@ -36,7 +36,7 @@ const result2 = calculator(100, 200);
 console.log(result2); */
 
 // 25. Declerations and Expressions
-
+/* 
 // Declerations
 function calculateAge1(birthYear) {
   const currentYear = 2025;
@@ -53,4 +53,22 @@ const calculateAge2 = function (birthYear) {
 };
 
 const age2 = calculateAge2(1996);
-console.log("Expression: ", age2);
+console.log("Expression: ", age2); */
+
+// 26. Arrow Functions
+
+const calculateAge3 = (birthYear) => 2025 - birthYear;
+const age3 = calculateAge3(1996);
+console.log(age3);
+
+const leftYearsForLegalAge = (birthYear, name) => {
+  const currentAge = 2025 - birthYear;
+  const leftYears = 18 - currentAge;
+
+  return `${name} will be 18 in ${leftYears} years`;
+};
+
+const leftYears = leftYearsForLegalAge(2020, "Micheal");
+const leftYears2 = leftYearsForLegalAge(2023, "John");
+console.log(leftYears);
+console.log(leftYears2);
