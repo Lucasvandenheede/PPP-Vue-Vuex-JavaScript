@@ -211,8 +211,32 @@ if (cities.includes("Berlin")) {
 
 const countryObject = {
   countryName: "Germany",
-  region: "Europe",
+  regionName: "Europe",
   population: 80000000,
   capitalCity: "Berlin",
   cities: ["Munich", "Dortmund", "Hamburg"],
 };
+
+///-----/// 32. Objects Notations ///-----///
+
+console.log(countryObject);
+
+console.log(countryObject.regionName);
+console.log(countryObject["regionName"]);
+
+const nameStr = "Name";
+console.log(countryObject["country" + nameStr]);
+console.log(countryObject["region" + nameStr]);
+
+const countryProperty = prompt(
+  "Country properties: countryName, regionName, population,capitalCity,cities"
+);
+
+if (countryObject[countryProperty]) {
+  console.log(countryObject[countryProperty]);
+} else {
+  console.log("Invalid property!");
+}
+
+countryObject.language = "German";
+console.log(countryObject);
