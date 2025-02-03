@@ -118,7 +118,7 @@ console.log(leftYearsForLegalAge(2003, "John")); */
 
 ///-----/// 29. Arrays ///-----///
 
-const city1 = "Istanbul";
+/* const city1 = "Istanbul";
 const city2 = "Berlin";
 const city3 = "London";
 
@@ -161,4 +161,40 @@ const leftYears3 = leftYearsForLegalAge(birthDates[birthDates.length - 1]);
 console.log(leftYears1, leftYears2, leftYears3);
 
 const leftYearsArray = [leftYears1, leftYears2, leftYears3];
-console.log(leftYearsArray);
+console.log(leftYearsArray); */
+
+///-----/// 30. Basic Arrays Operations ///-----///
+
+const cities = ["Istanbul", "Berlin", "London"];
+
+// Push method
+const pushedLenght = cities.push("Amsterdam");
+console.log(cities);
+console.log(pushedLenght);
+
+// Unshift method
+cities.unshift("Lisbon");
+console.log(cities);
+
+// Pop method
+cities.pop();
+const removedCity = cities.pop();
+console.log(cities);
+console.log(removedCity);
+
+// Shift method
+cities.shift();
+console.log(cities);
+
+console.log(cities.indexOf("Berlin"));
+console.log(cities.indexOf("Paris"));
+
+// Includes method (ES6)
+cities.push(100);
+console.log(cities.includes("Berlin"));
+console.log(cities.includes("Paris"));
+console.log(cities.includes(100));
+
+if (cities.includes("Berlin")) {
+  console.log("You visited Berlin");
+}
