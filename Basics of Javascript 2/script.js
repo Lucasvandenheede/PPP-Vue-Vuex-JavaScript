@@ -350,7 +350,7 @@ for (let index = 0; index < countryArray.length; index++) {
 
 ///-----/// 36. Looping Backwards ///-----///
 
-const countryArray = [
+/* const countryArray = [
   "Germany",
   "Europe",
   80000000,
@@ -369,4 +369,26 @@ for (let index = 1; index < 3; index++) {
   for (let rep = 1; rep <= 10; rep++) {
     console.log(`Loop ${index}: Text ${rep}`);
   }
+} */
+
+///-----/// 37. While loop ///-----///
+
+// for (let index = 1; index <= 5; index++) {
+//   console.log(`For loop: Text ${index}`);
+// }
+
+let index = 1;
+while (index <= 5) {
+  // console.log(`While loop: Text ${index}`);
+  index++;
 }
+
+// Create random number until 4
+let randomNumber = Math.trunc(Math.random() * 10) + 1;
+
+while (randomNumber !== 4) {
+  console.log(randomNumber);
+  randomNumber = Math.trunc(Math.random() * 10) + 1;
+}
+
+console.log("You reached the number you want!");
