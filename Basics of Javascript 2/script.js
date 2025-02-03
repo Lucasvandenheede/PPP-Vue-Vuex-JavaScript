@@ -298,6 +298,52 @@ console.log(testArray); */
 // console.log("Text 4");
 // console.log("Text 5");
 
-for (let index = 1; index <= 5; index++) {
+/* for (let index = 1; index <= 5; index++) {
   console.log(`Text ${index}`);
+} */
+
+///-----/// 35. Loops (Break and Continue) ///-----///
+
+const countryArray = [
+  "Germany",
+  "Europe",
+  80000000,
+  "Berlin",
+  ["Munich", "Dortmund", "Hamburg"],
+  100,
+];
+
+const typeOfArray = [];
+
+for (let index = 0; index < countryArray.length; index++) {
+  console.log(countryArray[index], typeof countryArray[index]);
+
+  // typeOfArray[index] = typeof countryArray[index];
+  typeOfArray.push(typeof countryArray[index]);
+}
+
+console.log(typeOfArray);
+
+const birthArray = [1985, 1999, 1947, 2023];
+const ageArray = [];
+const currentYear = 2025;
+
+for (let index = 0; index < birthArray.length; index++) {
+  ageArray.push(currentYear - birthArray[index]);
+}
+
+console.log(ageArray);
+
+console.log("Only numbers");
+for (let index = 0; index < countryArray.length; index++) {
+  if (typeof countryArray[index] !== "number") continue;
+
+  console.log(countryArray[index], typeof countryArray[index]);
+}
+
+console.log("Quit after number");
+for (let index = 0; index < countryArray.length; index++) {
+  if (typeof countryArray[index] === "number") break;
+
+  console.log(countryArray[index], typeof countryArray[index]);
 }
