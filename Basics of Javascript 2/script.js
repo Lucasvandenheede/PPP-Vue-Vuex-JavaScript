@@ -1,4 +1,4 @@
-// 23. Strict Mode
+///-----/// 23. Strict Mode ///-----///
 /* "use strict";
 
 let isAvailable = true;
@@ -12,7 +12,8 @@ else console.log("Person is in meeting");
 // const private = "room 15";
 // const switch = "open"; */
 
-// 24. Functions
+///-----/// 24. Functions ///-----///
+
 /* function welcomeText() {
   console.log("Welcome to my page!");
 }
@@ -35,7 +36,8 @@ console.log(result1);
 const result2 = calculator(100, 200);
 console.log(result2); */
 
-// 25. Declerations and Expressions
+///-----/// 25. Declerations and Expressions ///-----///
+
 /* 
 // Declerations
 function calculateAge1(birthYear) {
@@ -55,7 +57,7 @@ const calculateAge2 = function (birthYear) {
 const age2 = calculateAge2(1996);
 console.log("Expression: ", age2); */
 
-// 26. Arrow Functions
+///-----/// 26. Arrow Functions ///-----///
 
 /* const calculateAge3 = (birthYear) => 2025 - birthYear;
 const age3 = calculateAge3(1996);
@@ -73,9 +75,9 @@ const leftYears2 = leftYearsForLegalAge(2023, "John");
 console.log(leftYears);
 console.log(leftYears2); */
 
-// 27. Functions in functions
+///-----/// 27. Functions in functions ///-----///
 
-function addition(number1, number2) {
+/* function addition(number1, number2) {
   return number1 + number2;
 }
 
@@ -88,4 +90,28 @@ function calculator(number1, number2) {
   return resultText;
 }
 
-console.log(calculator(5, 6));
+console.log(calculator(5, 6)); */
+
+///-----/// 28. Recap of functions ///-----///
+
+const calculateCurrentAge = function (birthYear) {
+  return 2025 - birthYear;
+};
+
+const leftYearsForLegalAge = function (birthYear, name) {
+  const currentAge = calculateCurrentAge(birthYear);
+  const leftYears = 18 - currentAge;
+
+  if (leftYears > 0) {
+    console.log(`${name} will be 18 in ${leftYears} years`);
+    return leftYears;
+  } else {
+    console.log(`${name} is already legal.`);
+    return -1;
+  }
+
+  // return `${name} will be 18 in ${leftYears} years`;
+};
+
+console.log(leftYearsForLegalAge(2045, "Micheal"));
+console.log(leftYearsForLegalAge(2003, "John"));
