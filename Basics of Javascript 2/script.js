@@ -209,17 +209,17 @@ if (cities.includes("Berlin")) {
 //   ["Munich", "Dortmund", "Hamburg"],
 // ];
 
-const countryObject = {
+/* const countryObject = {
   countryName: "Germany",
   regionName: "Europe",
   population: 80000000,
   capitalCity: "Berlin",
   cities: ["Munich", "Dortmund", "Hamburg"],
-};
+}; */
 
 ///-----/// 32. Objects Notations ///-----///
 
-console.log(countryObject);
+/* console.log(countryObject);
 
 console.log(countryObject.regionName);
 console.log(countryObject["regionName"]);
@@ -239,4 +239,53 @@ if (countryObject[countryProperty]) {
 }
 
 countryObject.language = "German";
-console.log(countryObject);
+console.log(countryObject); */
+
+///-----/// 33. Objects Methods ///-----///
+
+const user = {
+  name: "John",
+  surname: "Doe",
+  birthYear: 1975,
+  hobbies: ["Swimming", "Gaming", "Painting"],
+  isLegal: false,
+
+  // calculateAge: function (birthYear) {
+  //   return 2025 - birthYear;
+  // },
+
+  // calculateAge: function () {
+  //   // console.log(this);
+  //   return 2025 - this.birthYear;
+  // },
+
+  calculateAge: function () {
+    // console.log(this);
+    this.age = 2025 - this.birthYear;
+    return this.age;
+  },
+
+  info: function () {
+    return `User name is ${this.name} ${
+      this.surname
+    }. User age ${this.calculateAge(this.birthYear)}. User hobbies are ${
+      this.hobbies[0]
+    }, ${this.hobbies[1]}, ${this.hobbies[2]}. User is ${
+      this.isLegal ? "an adult" : "not an adult"
+    }.`;
+  },
+};
+
+console.log(user.calculateAge());
+// console.log(user["calculateAge"](1996));
+
+console.log(user.age);
+console.log(user.age);
+console.log(user.age);
+
+console.log(user.info());
+
+const testArray = [];
+
+console.log(testArray.push("test"));
+console.log(testArray);
