@@ -243,7 +243,7 @@ console.log(countryObject); */
 
 ///-----/// 33. Objects Methods ///-----///
 
-const user = {
+/* const user = {
   name: "John",
   surname: "Doe",
   birthYear: 1975,
@@ -288,4 +288,16 @@ console.log(user.info());
 const testArray = [];
 
 console.log(testArray.push("test"));
-console.log(testArray);
+console.log(testArray); */
+
+///-----/// 34. For Loop ///-----///
+
+// console.log("Text 1");
+// console.log("Text 2");
+// console.log("Text 3");
+// console.log("Text 4");
+// console.log("Text 5");
+
+for (let index = 1; index <= 5; index++) {
+  console.log(`Text ${index}`);
+}
