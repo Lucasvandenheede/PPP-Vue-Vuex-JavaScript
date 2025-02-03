@@ -94,7 +94,7 @@ console.log(calculator(5, 6)); */
 
 ///-----/// 28. Recap of functions ///-----///
 
-const calculateCurrentAge = function (birthYear) {
+/* const calculateCurrentAge = function (birthYear) {
   return 2025 - birthYear;
 };
 
@@ -114,4 +114,51 @@ const leftYearsForLegalAge = function (birthYear, name) {
 };
 
 console.log(leftYearsForLegalAge(2045, "Micheal"));
-console.log(leftYearsForLegalAge(2003, "John"));
+console.log(leftYearsForLegalAge(2003, "John")); */
+
+///-----/// 29. Arrays ///-----///
+
+const city1 = "Istanbul";
+const city2 = "Berlin";
+const city3 = "London";
+
+const cities = ["Istanbul", "Berlin", "London"]; // Literal syntax
+console.log(cities);
+
+const fruits = new Array("Apple", "Strawberry", "Lemon", "Melon");
+console.log(fruits);
+
+console.log(cities[0]);
+console.log(cities[2]);
+console.log(cities.length);
+console.log(cities[cities.length - 1]);
+
+cities[2] = "New York";
+console.log(cities);
+
+// cities = ["Los Angeles", "Madrid"];
+
+const population = 20000000;
+const istanbul = ["Istanbul", "Turkey", population, cities];
+
+console.log(istanbul);
+console.log(istanbul.length);
+
+const leftYearsForLegalAge = (birthYear) => {
+  const currentAge = 2025 - birthYear;
+  const leftYears = 18 - currentAge;
+
+  return leftYears;
+};
+
+const birthDates = [2045, 2046, 2047, 2048, 2049];
+console.log(leftYearsForLegalAge(birthDates));
+
+const leftYears1 = leftYearsForLegalAge(birthDates[0]);
+const leftYears2 = leftYearsForLegalAge(birthDates[1]);
+const leftYears3 = leftYearsForLegalAge(birthDates[birthDates.length - 1]);
+
+console.log(leftYears1, leftYears2, leftYears3);
+
+const leftYearsArray = [leftYears1, leftYears2, leftYears3];
+console.log(leftYearsArray);
