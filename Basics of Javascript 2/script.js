@@ -304,7 +304,7 @@ console.log(testArray); */
 
 ///-----/// 35. Loops (Break and Continue) ///-----///
 
-const countryArray = [
+/* const countryArray = [
   "Germany",
   "Europe",
   80000000,
@@ -346,4 +346,27 @@ for (let index = 0; index < countryArray.length; index++) {
   if (typeof countryArray[index] === "number") break;
 
   console.log(countryArray[index], typeof countryArray[index]);
+} */
+
+///-----/// 36. Looping Backwards ///-----///
+
+const countryArray = [
+  "Germany",
+  "Europe",
+  80000000,
+  "Berlin",
+  ["Munich", "Dortmund", "Hamburg"],
+  100,
+];
+
+for (let index = countryArray.length - 1; index >= 0; index--) {
+  console.log(index, countryArray[index]);
+}
+
+for (let index = 1; index < 3; index++) {
+  console.log(`This is text loop ${index}`);
+
+  for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Loop ${index}: Text ${rep}`);
+  }
 }
