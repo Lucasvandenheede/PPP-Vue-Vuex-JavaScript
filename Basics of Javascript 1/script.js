@@ -272,13 +272,13 @@ const age = 36;
 //   ? console.log("You can drive a car")
 //   : console.log("You can not drive a car");
 
-const vehicle = age >= 18 ? "Car" : "Bike";
+const vehicle = age >= 18 ? 'Car' : 'Bike';
 console.log(vehicle);
 
 let vehicleTwo;
-if (age >= 18) vehicleTwo = "Car";
-else vehicleTwo = "Bike";
+if (age >= 18) vehicleTwo = 'Car';
+else vehicleTwo = 'Bike';
 
 console.log(vehicleTwo);
 
-console.log(`I can drive ${age >= 18 ? "Car" : "Bike"}`);
+console.log(`I can drive ${age >= 18 ? 'Car' : 'Bike'}`);

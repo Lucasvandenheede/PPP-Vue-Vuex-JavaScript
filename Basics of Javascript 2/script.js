@@ -391,4 +391,4 @@ while (randomNumber !== 4) {
   randomNumber = Math.trunc(Math.random() * 10) + 1;
 }
 
-console.log("You reached the number you want!");
+console.log('You reached the number you want!');
