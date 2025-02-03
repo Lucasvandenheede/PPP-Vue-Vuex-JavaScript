@@ -165,7 +165,7 @@ console.log(leftYearsArray); */
 
 ///-----/// 30. Basic Arrays Operations ///-----///
 
-const cities = ["Istanbul", "Berlin", "London"];
+/* const cities = ["Istanbul", "Berlin", "London"];
 
 // Push method
 const pushedLenght = cities.push("Amsterdam");
@@ -197,4 +197,22 @@ console.log(cities.includes(100));
 
 if (cities.includes("Berlin")) {
   console.log("You visited Berlin");
-}
+} */
+
+///-----/// 31. Objects ///-----///
+
+// const country = [
+//   "Germany",
+//   "Europe",
+//   80000000,
+//   "Berlin",
+//   ["Munich", "Dortmund", "Hamburg"],
+// ];
+
+const countryObject = {
+  countryName: "Germany",
+  region: "Europe",
+  population: 80000000,
+  capitalCity: "Berlin",
+  cities: ["Munich", "Dortmund", "Hamburg"],
+};
