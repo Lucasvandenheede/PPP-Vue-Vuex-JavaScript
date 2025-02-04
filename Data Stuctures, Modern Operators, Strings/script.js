@@ -45,3 +45,5 @@ console.log(x, y, z);
 
 [x = 0, y = 0, z = 0] = [1];
 console.log(x, y, z);
+
+//-----// Objects Destructuring //-----//
