@@ -70,7 +70,7 @@ console.log(x, y, z); */
 
 //-----// Object Destructuring //-----//
 
-const { name, categories, numberOfEmployees } = company;
+/* const { name, categories, numberOfEmployees } = company;
 console.log(name, categories, numberOfEmployees);
 
 const {
@@ -102,4 +102,20 @@ console.log(activeEmployees, onVacationEmployees);
 company.buyProducts({
   recentIndex: 1,
   popularIndex: 2,
-});
+}); */
+
+//-----// Spread Operator //-----//
+
+const letters = ['d', 'e', 'f'];
+const spreadArray = ['a', 'b', 'c', ...letters];
+console.log(spreadArray);
+
+const newPopularProducts = [...company.popularProducts, 'Printer'];
+console.log(newPopularProducts);
+
+const allProducts = [...company.recentProducts, ...company.popularProducts];
+console.log(allProducts);
+
+const testString = 'test';
+const spreadString = [...testString];
+console.log(spreadString);
