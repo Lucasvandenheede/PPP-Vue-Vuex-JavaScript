@@ -92,4 +92,4 @@ const showError = function (errorMessage) {
   container.insertAdjacentText('beforeend', errorMessage);
 };
 
-getCountry('iceland ');
+getCountry('iceland');
