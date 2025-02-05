@@ -141,7 +141,7 @@ console.log(product1, product2, restProducts); */
 
 //-----// Short Circuiting //-----//
 
-// OR
+/* // OR
 console.log(25 || 'operator50');
 console.log(undefined || 50);
 console.log(true || '');
@@ -163,4 +163,77 @@ console.log(totalSalesNullish);
 // AND
 console.log(undefined && 50);
 console.log('string' && 50);
-console.log('string' && 50 && true && 0 && true);
+console.log('string' && 50 && true && 0 && true); */
+
+//-----// Strings //-----//
+
+const carBrand = 'Toyota';
+const carModel = 'Corolla Hybrid';
+
+console.log(carModel[0]); // C
+console.log('Yaris'[0]); // Y
+console.log(carModel.length);
+console.log('Yaris'.length);
+
+console.log(carModel.indexOf('l'));
+console.log(carModel.lastIndexOf('l'));
+console.log(carModel.indexOf('Hybrid'));
+
+console.log(carModel.slice(8)); // Substring
+console.log(carModel.slice(8, 12)); // Length => 12 - 8 = 4
+
+console.log(carModel.slice(0, carModel.indexOf(' ')));
+console.log(carModel.slice(carModel.indexOf(' ') + 1));
+
+console.log(carModel.toLowerCase());
+console.log(carModel.toUpperCase());
+
+const buyerName = 'jOhN';
+const buyerNameLower = buyerName.toLowerCase();
+const buyerNameFixed =
+  buyerNameLower.slice(0, 1).toUpperCase() + buyerNameLower.slice(1);
+console.log(buyerNameFixed);
+
+const userEmail = 'john@doe.com';
+const inputEmail = '  JoHn@DoE.CoM';
+const fixedInputEmail = inputEmail.toLowerCase().trim();
+console.log(fixedInputEmail);
+
+const corrolaPriceUS = '5000$';
+const corrolaPriceEU = corrolaPriceUS.replace('$', '€');
+console.log(corrolaPriceEU);
+
+const description = 'Power down your drive, power down your passion!';
+console.log(description.replace('down', 'up')); // CASE SENSITIVE
+console.log(description.replaceAll('down', 'up'));
+
+const carModelTwo = 'Land Cruiser';
+console.log(carModelTwo.includes('Land'));
+console.log(carModelTwo.includes('Corolla'));
+
+console.log('this-is-geart'.split('-'));
+console.log('John Doe'.split(' '));
+
+const [firstName, surName] = 'John Doe'.split(' ');
+const introString = ['Hi', firstName, surName].join(' ').toUpperCase();
+console.log(introString);
+
+const capitalize = function (name) {
+  const words = name.split(' ');
+  const wordsCapitalize = [];
+
+  for (const word of words) {
+    wordsCapitalize.push(word[0].toUpperCase() + word.slice(1));
+  }
+  console.log(wordsCapitalize.join(' '));
+};
+
+capitalize('Mike tyson');
+capitalize('leonardo di caprio');
+capitalize('lana del rey');
+
+const paddingText = 'Test String';
+console.log(paddingText.padStart(20, '-').padEnd(30, '-'));
+
+const repeatText = 'repeated text';
+console.log(repeatText.repeat(10));
