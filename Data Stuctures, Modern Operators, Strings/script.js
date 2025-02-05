@@ -106,7 +106,7 @@ company.buyProducts({
 
 //-----// Spread Operator //-----//
 
-const letters = ['d', 'e', 'f'];
+/* const letters = ['d', 'e', 'f'];
 const spreadArray = ['a', 'b', 'c', ...letters];
 console.log(spreadArray);
 
@@ -118,4 +118,49 @@ console.log(allProducts);
 
 const testString = 'test';
 const spreadString = [...testString];
-console.log(spreadString);
+console.log(spreadString); */
+
+//-----// Rest Operator //-----//
+
+/* const spreadArray = ['a', 'b', ...['c', 'd']];
+const [firstLetter, secondLetter, ...restLetters] = [
+  'a',
+  'b',
+  'c',
+  'd',
+  'e',
+  'f',
+];
+console.log(firstLetter, secondLetter, restLetters);
+
+const [product1, product2, ...restProducts] = [
+  ...company.recentProducts,
+  ...company.popularProducts,
+];
+console.log(product1, product2, restProducts); */
+
+//-----// Short Circuiting //-----//
+
+// OR
+console.log(25 || 'operator50');
+console.log(undefined || 50);
+console.log(true || '');
+console.log(null || 0);
+console.log('' || null || 'rocky' || undefined);
+
+company.totalSales = 1000;
+const totalSales = company.totalSales ? company.totalSales : 0;
+console.log(totalSales);
+
+const totalSalesShort = company.totalSales || 0;
+console.log(totalSalesShort);
+
+// NULLISH
+company.totalSales = 0;
+const totalSalesNullish = company.totalSales ?? 25;
+console.log(totalSalesNullish);
+
+// AND
+console.log(undefined && 50);
+console.log('string' && 50);
+console.log('string' && 50 && true && 0 && true);
