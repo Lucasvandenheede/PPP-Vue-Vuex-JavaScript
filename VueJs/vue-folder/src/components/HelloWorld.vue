@@ -31,6 +31,55 @@
     <input v-model="text" type="text" /><br />
     {{ text }}
   </div>
+  <div>
+    <h1>V-html</h1>
+    <div v-html="myContent"></div>
+  </div>
+  <div>
+    <h1>V-text</h1>
+    <p v-text="myText"></p>
+  </div>
+  <div>
+    <h1>V-once</h1>
+    <p v-once>{{ myName }}</p>
+    <p>{{ myName }}</p>
+    <button @click="myName = 'new Name'">Click</button>
+  </div>
+  <div>
+    <h1>V-Show</h1>
+    <p v-show="isShowing">I am here</p>
+    <button @click="isShowing = !isShowing">
+      {{ isShowing ? 'HIDE' : 'SHOW' }}
+    </button>
+  </div>
+  <div>
+    <h1>V-If & V-Else & V-Else-If</h1>
+    <p v-if="location === 'A'">A</p>
+    <p v-else-if="location === 'b'">B</p>
+    <p v-else>Home</p>
+  </div>
+  <div>
+    <h1>V-For</h1>
+    <p v-for="(letter, index) in alphabet" :key="letter">
+      {{ index }}: {{ letter }}
+    </p>
+  </div>
+  <div>
+    <h1>V-Model</h1>
+    <input type="text" v-model="text" /><br />
+    {{ text }}
+  </div>
+  <div>
+    <h1>V-On</h1>
+    <button v-on:click="onClick">Click</button><br />
+    <button @click="onClick">Click</button>
+  </div>
+  <div>
+    <h1>V-Pre</h1>
+    <span v-pre>{{ myName }}</span
+    ><br />
+    <span v-pre>{{ 10 + 10 }}</span>
+  </div>
 </template>
 
 <script>
@@ -56,6 +105,9 @@ export default {
     sayHello() {
       return 'HELLOOOOO';
     },
+    onClick() {
+      console.log('Hello');
+    },
   },
   data() {
     return {
@@ -65,6 +117,12 @@ export default {
         'https://images.pexels.com/photos/29320668/pexels-photo-29320668/free-photo-of-high-speed-race-car-on-a-wet-track.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       number: 1,
       text: 'Test',
+      myContent: '<b style="color: red">Hello my content</b>',
+      myText: 'Hello. How are you',
+      myName: 'Lucas',
+      isShowing: true,
+      location: '',
+      alphabet: ['A', 'B', 'C'],
     };
   },
   props: {
