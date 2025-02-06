@@ -98,6 +98,24 @@
     <h2 :style="{ color, fontWeight }">Hello</h2>
     <h3 :style="styleObj">Hello</h3>
   </div>
+  <div>
+    <h1>Lists & Conditional Statements</h1>
+    <div
+      @click="myData(item.name)"
+      v-for="(item, index) in myList"
+      :key="index"
+    >
+      <h2 @click="removeData(index)" class="header">
+        {{ item.name }}
+      </h2>
+    </div>
+  </div>
+  <div>
+    <h1>Object Rendering</h1>
+    <div v-for="(item, key, index) in user" v-bind:key="item">
+      {{ index }}. {{ key }}: {{ item }}
+    </div>
+  </div>
 </template>
 
 <script>
@@ -129,6 +147,12 @@ export default {
     test() {
       console.log(this.name);
     },
+    myData(data) {
+      console.log(data);
+    },
+    removeData(index) {
+      this.myList.splice(index, 1);
+    },
   },
   data() {
     return {
@@ -157,6 +181,16 @@ export default {
       styleObj: {
         color: 'red',
         backgroundColor: 'blue',
+      },
+      myList: [
+        { id: 1, name: 'John', isActive: true },
+        { id: 2, name: 'Jack', isActive: false },
+        { id: 3, name: 'Emma', isActive: true },
+      ],
+      user: {
+        name: 'Vue.js',
+        text: 'Framework',
+        date: new Date().toLocaleDateString(),
       },
     };
   },
@@ -198,5 +232,12 @@ export default {
 
 .B {
   background-color: black;
+}
+
+.header {
+  border: 1px solid orangered;
+  background-color: orangered;
+  color: black;
+  padding: 1rem;
 }
 </style>
