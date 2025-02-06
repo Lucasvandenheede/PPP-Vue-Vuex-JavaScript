@@ -83,8 +83,20 @@
   <div>
     <h1>Data Object</h1>
     <p>{{ name }}</p>
-    <p>{{ person.name }}</p>
+    <p>{{ personObj.name }}</p>
     <button @click="test">Click</button>
+  </div>
+  <div>
+    <h1>Style</h1>
+    <div :class="className">Hello</div>
+    <h2 :class="{ active: isActive, back: isActive }">Hello</h2>
+
+    <h2 :class="[a, b]">Hello</h2>
+  </div>
+  <div>
+    <h1>Inline Style</h1>
+    <h2 :style="{ color, fontWeight }">Hello</h2>
+    <h3 :style="styleObj">Hello</h3>
   </div>
 </template>
 
@@ -133,8 +145,18 @@ export default {
       location: '',
       alphabet: ['A', 'B', 'C'],
       name: 'Lucas',
-      person: {
+      personObj: {
         name: 'Lucas',
+      },
+      className: 'color-blue back',
+      isActive: true,
+      a: 'A',
+      b: 'B',
+      color: 'purple',
+      fontWeight: '800',
+      styleObj: {
+        color: 'red',
+        backgroundColor: 'blue',
       },
     };
   },
@@ -152,5 +174,29 @@ export default {
 
 #myH2 {
   background-color: red;
+}
+
+.color-red {
+  color: red;
+}
+
+.color-blue {
+  color: blue;
+}
+
+.active {
+  color: green;
+}
+
+.back {
+  background-color: aqua;
+}
+
+.A {
+  color: red;
+}
+
+.B {
+  background-color: black;
 }
 </style>
