@@ -80,6 +80,12 @@
     ><br />
     <span v-pre>{{ 10 + 10 }}</span>
   </div>
+  <div>
+    <h1>Data Object</h1>
+    <p>{{ name }}</p>
+    <p>{{ person.name }}</p>
+    <button @click="test">Click</button>
+  </div>
 </template>
 
 <script>
@@ -108,6 +114,9 @@ export default {
     onClick() {
       console.log('Hello');
     },
+    test() {
+      console.log(this.name);
+    },
   },
   data() {
     return {
@@ -123,6 +132,10 @@ export default {
       isShowing: true,
       location: '',
       alphabet: ['A', 'B', 'C'],
+      name: 'Lucas',
+      person: {
+        name: 'Lucas',
+      },
     };
   },
   props: {
