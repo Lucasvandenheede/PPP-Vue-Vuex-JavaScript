@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <!-- <myTitle /> -->
     <h1>{{ msg }}</h1>
     <h2 :id="myH2">Hello</h2>
     <div v-bind:id="myId">Hello my div: {{ myId }}</div>
