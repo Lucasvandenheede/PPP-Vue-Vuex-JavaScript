@@ -4,16 +4,21 @@
     <button @click="changeName">Change</button>
     <Mixin />
   </div>
+  <div>
+    <NextTick />
+  </div>
 </template>
 
 <script>
 import Mixin from './components/Mixin.vue';
+import NextTick from './components/NextTick.vue';
 import myMixin from './mixins/myMixin';
 
 export default {
   name: 'App',
   components: {
     Mixin,
+    NextTick,
   },
   mixins: [myMixin],
 };
